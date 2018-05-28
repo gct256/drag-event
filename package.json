@@ -1,0 +1,28 @@
+{
+  "name": "drag-event",
+  "version": "0.1.0",
+  "description": "Drag the event handling of the DOM Element.",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gct256/drag-event.git"
+  },
+  "author": "gct256+github@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gct256/drag-event/issues"
+  },
+  "homepage": "https://github.com/gct256/drag-event#readme",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "rollup": "^0.59.1",
+    "rollup-plugin-babel": "^3.0.4"
+  }
+}

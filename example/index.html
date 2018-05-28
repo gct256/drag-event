@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>drag-event example</title>
+  <style>
+    .example {
+      background: #090;
+      width: 200px;
+      height: 100px;
+    }
+
+    .log {
+      height: 200px;
+      padding: 5px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      border: 1px solid #888;
+    }
+
+    .log p {
+      margin: 0;
+      font-size: 12px;
+      font-family: 'Menlo', 'Consolas', monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="example" id="example">drag, click here</div>
+  <fieldset>
+    <legend>event log</legend>
+    <div class="log" id="log"></div>
+  </fieldset>
+  <script src="../dist/dragEvent.js"></script>
+  <script>
+    function addLog(message) {
+      var log = document.getElementById('log');
+      var p = document.createElement('p');
+      p.appendChild(document.createTextNode(message));
+      log.insertBefore(p, log.firstChild);
+    }
+
+    function listener(ev, type, coords) {
+      addLog(type + ':' + JSON.stringify(coords));
+      ev.preventDefault();
+      ev.stopPropagation();
+    }
+
+    window.dragEvent.subscribe(document.getElementById('example'), listener);
+  </script>
+</body>
+
+</html>
