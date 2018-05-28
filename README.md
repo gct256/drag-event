@@ -34,7 +34,7 @@ import * as DragEvent from 'drag-event';
 
 function listener(
   ev: MouseEvent,
-  type: DragEvent.Type,
+  eventType: DragEvent.EventType,
   coords: DragEvent.Coords,
 ): void {
   //
@@ -42,3 +42,17 @@ function listener(
 
 DragEvent.subscribe(document.getElementById('target'), listener);
 ```
+
+## reference
+
+* DragEvent.subscribe(element, listener, threshold = 5)
+
+### event type
+
+* mousedown
+* mouseup
+* dragstart
+* drag
+* dragend
+* click
+* dblclick
