@@ -17,4 +17,13 @@ export default [
     },
     plugins: [babel()],
   },
+  {
+    input: './src/dragEvent.js',
+    output: {
+      file: './dist/dragEvent.js',
+      format: 'iife',
+      name: 'dragEvent',
+    },
+    plugins: [babel()],
+  },
 ];
