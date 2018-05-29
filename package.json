@@ -1,7 +1,7 @@
 {
   "name": "drag-event",
-  "version": "0.1.0",
-  "description": "Drag the event handling of the DOM Element.",
+  "version": "0.1.1",
+  "description": "Mouse drag event handling of DOM Element.",
   "main": "index",
   "repository": {
     "type": "git",
