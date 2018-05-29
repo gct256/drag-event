@@ -1,6 +1,6 @@
 # drag-event
 
-* Drag the event handling of the DOM Element.
+* Mouse drag event handling of DOM Element.
 * **Event handling only.** It does not include move, resize, etc.
 
 ## install
@@ -16,6 +16,16 @@ yarn add drag-event
 ```
 
 ## usage
+
+```html
+<!-- for Browser -->
+<script src="./dist/dragEvent.js"></script>
+<script>
+subscribe(document.getElementById('target'), function(ev, type, coords) {
+  //
+});
+</script>
+```
 
 ```js
 // ECMAScript
